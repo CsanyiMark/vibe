@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - Ajánlatkérés</title>
+    <link rel="stylesheet" href="kapcsolat.css">
+    
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kapcsolatfelvétel</h1>
+            <p>Kérjen ajánlatot vagy vegye fel velünk a kapcsolatot</p>
+        </div>
+        <nav class="container">
+            <a href="Vibe soforszolgalat.html">Főoldal</a>
+            <a href="Szolgaltatasok.html">Szolgálatatások</a>
+            <a href="Kapcsolat.html">Kapcsolat</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="kapcsolat">
+            <div class="kapcsolatinfo">
+                <h2>Elérhetőségeink</h2>
+                
+                <div class="infok">
+                    
+                    <div>
+                        <h3>Címünk</h3>
+                        <p>Budapest, Buzogány u. 10-12, 1149</p>
+                    </div>
+                </div>
+                
+                <div class="infok">
+                    
+                    <div>
+                        <h3>Telefon</h3>
+                        <p>+36 1 234 5678</p>
+                        <p>+36 30 123 4567</p>
+                    </div>
+                </div>
+                
+                <div class="infok">
+                    
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@vibe.hu</p>
+                        <p>ugyfelszolgalat@vibe.hu</p>
+                    </div>
+                </div>
+                
+              
+            </div>
+            
+            <div class="ajanlatkero-form">
+                <h2>Ajánlatkérés</h2>
+                <form action="#" method="POST">
+                    <div class="ajanlatkero">
+                        <label for="nev">Név*</label>
+                        <input type="text" id="nev" name="nev" required>
+                    </div>
+                    
+                    <div class="ajanlatkero">
+                        <label for="email">Email cím*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="ajanlatkero">
+                        <label for="telcsi">Telefonszám</label>
+                        <input type="tel" id="telcsi" name="telcsi">
+                    </div>
+                    
+                    <div class="ajanlatkero">
+                        <label for="szolg">Szolgáltatás típusa*</label>
+                        <select id="szolg" name="szolg" required>
+                            <option value="" disabled selected>Válasszon...</option>
+                            <option value="soforszolgalat">Sofőrszolgálat</option>
+                            <option value="Szerviz">Szerviz</option>
+                            <option value="hozom-Viszem">Hozom-Viszem</option>
+                            <option value="Transzfer">Transzfer</option>
+                            <option value="Egyeb">Egyéb</option>
+                        </select>
+                    </div>
+                    
+                    <div class="ajanlatkero">
+                        <label for="uzenet">Üzenet*</label>
+                        <textarea id="message" name="uzenet" required placeholder="Kérjük írja le miben lehetünk szolgálatára...."></textarea>
+                    </div>
+                    
+                   
+                    
+                    <button type="kuldes" class="kuldes-gomb">Ajánlatkérés elküldése </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header {
+    background: #000;
+    color: #8800d0;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+.kapcsolat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.kapcsolatinfo {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.kapcsolatinfo h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.kapcsolatinfo h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #8800d0;
+}
+
+.infok {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.infok i {
+    font-size: 1.2rem;
+    color: #8800d0;
+    margin-right: 1rem;
+    margin-top: 3px;
+}
+
+
+.ajanlatkero-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ajanlatkero {
+    margin-bottom: 1.5rem;
+}
+
+.ajanlatkero label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.ajanlatkero input,
+.ajanlatkero textarea,
+.ajanlatkero select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.ajanlatkero input:focus,
+.ajanlatkero textarea:focus,
+.ajanlatkero select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.ajanlatkero textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.kuldes-gomb {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 600;
+}
+
+.kuldes-gomb:hover {
+    transform: translateY(-2px);
+    color: #8800d0;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+nav {
+display: flex;
+justify-content: center;
+background: #000;
+padding: 10px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 15px;
+border: 1px solid #fff;
+border-radius: 2px;
+padding: 10px 20px;
+
+}
+nav :hover{
+color: #8800d0;
+background: #fff;
+
+}
+
+@media (max-width: 768px) {
+    .kapcsolat {
+        flex-direction: column;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
